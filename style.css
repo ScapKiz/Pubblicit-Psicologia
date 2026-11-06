@@ -158,7 +158,7 @@ figcaption{font-size:.875rem;line-height:1.4;margin-top:.6rem}
 .fig h3{font:400 1.75rem/1.1 var(--serif);margin-top:.6rem}
 .fig p{font-size:1rem;line-height:1.4}
 .fig .eg{font:italic 400 1.25rem/1.35 var(--serif);color:var(--th-champ);margin-top:.15rem;margin-bottom:.6rem}
-.fig .floch-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(1.5rem,4vw,5rem);align-items:center}
+.floch-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(1.5rem,4vw,5rem);align-items:center}
 #flochSvg text{font:500 22px var(--sans);fill:var(--th-ink)}
 #flochSvg .sq-note{font:italic 400 22px var(--serif);fill:var(--th-note)}
 #flochSvg .sq-brand{font:600 19px var(--sans);fill:var(--th-ink)}
@@ -169,7 +169,6 @@ figcaption{font-size:.875rem;line-height:1.4;margin-top:.6rem}
 .sq-corner.on circle{fill:var(--th-gold);r:24px}
 .sq-star-rr use{fill:var(--th-champ)}
 .sq-star-gg use{fill:#B8A26A}
-.floch-fig figcaption{font-size:.9375rem;color:var(--th-note)}
 .floch-defs{display:grid;gap:.75rem}
 .def{display:block;width:100%;text-align:left;background:var(--th-card);padding:1rem 1.25rem;transition:background-color .3s,transform .3s var(--ease)}
 .def strong{display:block;font:400 1.75rem/1.1 var(--serif)}
@@ -213,7 +212,6 @@ figcaption{font-size:.875rem;line-height:1.4;margin-top:.6rem}
 .rr-data dt{color:var(--rr-silver)}
 .rr-reach{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:1.5rem;margin-top:clamp(2rem,4vw,4rem);font-size:1.1rem;color:var(--rr-silver)!important}
 .rr-reach b{display:block;font:300 clamp(3.2rem,8vw,11rem)/.95 var(--serif);color:#F3F1EC;letter-spacing:-.02em}
-.rr-credit{font-size:.875rem;color:var(--rr-silver)!important;margin-top:1.5rem}
 .rr-five{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2rem,6vw,8rem);align-items:center}
 .rr-list{margin-bottom:1.5rem}
 .rr-list li{font:300 clamp(2rem,3.4vw,4.4rem)/1.2 var(--serif);color:var(--rr-silver);transition:color .5s,transform .5s var(--ease)}
@@ -374,7 +372,6 @@ figcaption{font-size:.875rem;line-height:1.4;margin-top:.6rem}
 .vs-h{font:300 clamp(2.3rem,4vw,5.6rem)/1.03 var(--serif);color:#F3F1EC;padding-inline:var(--gut)}
 .vs-same{padding-inline:var(--gut);color:var(--gg-ink)}
 .vs-same li{font-size:1.2rem;margin-bottom:.6rem}
-.vs-grafica{padding:1rem var(--gut) 0 calc(50% + var(--gut));font-size:.875rem;color:var(--gg-ink)}
 .chapter-nav-dark a:first-child{color:var(--rr-text)}
 .chapter-nav-dark a:last-child{color:var(--gg-ink)}
 
@@ -454,7 +451,6 @@ body.is-present .rr-h2{font-size:3.8vw;margin-bottom:1.25rem}
 body.is-present .rr-film .film{max-height:48vh;aspect-ratio:auto}
 body.is-present .rr-reach{margin-top:1.25rem}
 body.is-present .rr-reach b{font-size:5vw}
-body.is-present .rr-credit{margin-top:.5rem}
 body.is-present .rr-frames{grid-template-columns:1fr;gap:1rem}
 body.is-present .rr-frames img{height:32vh;width:100%}
 body.is-present .rr-silk-grid figure img{height:30vh}
@@ -479,6 +475,10 @@ body.is-present .gg-cast>figure img{height:44vh;width:100%;object-fit:cover}
 body.is-present .gg-names{grid-template-columns:repeat(2,1fr);gap:.4rem 1.5rem;margin-top:0}
 body.is-present .gg-names b{font-size:2vw}
 body.is-present .gg-end-grid img{max-height:66vh;object-fit:cover}
+
+body.is-present .axes-fig svg{height:50vh}
+body.is-present .vs-fabric{height:9vh;margin-top:.5rem}
+body.is-present .vs-axes-text{margin-top:1rem}
 
 /* ---------- INGRANDIMENTO ---------- */
 .lb{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;border:0;padding:0;background:#080809;color:#F3F1EC;overflow:hidden}
@@ -565,7 +565,6 @@ body.is-present .gg-end-grid img{max-height:66vh;object-fit:cover}
   .vs-h{margin-right:0;padding-inline:.85rem}
   .vs-same{padding-inline:.85rem}
   .vs-same li{font-size:.9375rem}
-  .vs-grafica{padding-left:calc(50% + .85rem)}
   .end-q{margin-top:9rem}
   .conclusione{background:linear-gradient(/* taste-skill-ignore: sfumatura chiesta in ricerca.md */180deg,var(--rr-bg) 0%,var(--rr-bg) 46%,#6d675f 54%,var(--gg-bg) 62%,var(--gg-bg) 100%)}
   .close-name{white-space:normal}
